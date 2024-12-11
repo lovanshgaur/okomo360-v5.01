@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/global.css" class="css">
+    <link rel="stylesheet" href="../css/responsive.css" class="css">
+    <link rel="stylesheet" href="../css/service.css" class="css">
+
+</head>
+
+<body>
+
+    <!-- Reload Transition -->
+    <div class="transition">
+        <div class="transition-row row-1">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+        <div class="transition-row row-2">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+    <div id="container">
+
+        <!-------------Nav Section------------->
+        <nav>
+            <div id="logo">
+                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+            </div>
+            <div id="navbar">
+                <div class="nav-icon" id="nav-icon">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+                <div id="sidebar" class="sidebar">
+                    <div class="link-container">
+                        <a href="../index.html" class="active-link">Home</a>
+                        <a href="service.html">Services</a>
+                        <a href="about.html">About</a>
+                        <a href="contact.html">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-------------Nav Section------------->
+        <main>
+            <div id="services-container">
+                <div class="service-index">
+                    <button class="tablinks" onclick="openService(event, 'tourism')" id="defaultOpen">Tourism</button>
+                    <button class="tablinks" onclick="openService(event, 'social-media')">Social Media Integration</button>
+                    <button class="tablinks" onclick="openService(event, 'real-estate')">Real Estate</button>
+                    <button class="tablinks" onclick="openService(event, 'extreme-sports')">Extreme Sports</button>
+                    <button class="tablinks" onclick="openService(event, 'vr-concerts')">VR Concerts</button>
+                    <button class="tablinks" onclick="openService(event, 'corporate')">Corporate</button>
+                    <button class="tablinks" onclick="openService(event, 'education')">Education</button>
+                    <button class="tablinks" onclick="openService(event, 'vr-games')">VR Games</button>
+
+                </div>
+                <div class="service-viewer">
+
+                    <div id="tourism" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>VR Tourism</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Experience global destinations like never before with OKOMO360's immersive
+                                        360-degree virtual
+                                        Discover breathtaking tours that take you from scenic landscapes to historical
+                                        sites,
+                                        allowing you to explore the world from the comfort of your home. With our
+                                        cutting-edge
+                                        technology, you can immerse yourself in vibrant cultures, interact with local
+                                        communities,
+                                        and experience the sights and sounds of each destination as if you were truly
+                                        there. Whether
+                                        it's wandering through ancient ruins, enjoying the beauty of nature, or
+                                        participating in
+                                        local festivals, our virtual tours offer an unforgettable journey that
+                                        transcends borders
+                                        and time zones. </p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/tourism-section.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="section">
+                                <div class="content">
+                                    <div class="content-box">
+                                        <h1>Why Virtual Tourism?</h1>
+                                        <p>Virtual tourism provides numerous advantages that appeal to both travelers
+                                            and tourism
+                                            providers. It allows individuals to explore diverse destinations from the
+                                            comfort of their
+                                            homes, making travel more accessible and affordable. This innovative
+                                            approach not only
+                                            enhances the travel experience but also promotes cultural exchange and
+                                            understanding, as
+                                            users can engage with local communities and environments in a unique way.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="social-media" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>Social Media Integration</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Stay connected with the world around you through OKOMO360's seamless social media
+                                        integration. Share your virtual tourism experiences with friends and family, or
+                                        connect with like-minded explorers across the globe. Our platform allows you to
+                                        easily post photos, videos, and updates from your tours directly to your social
+                                        media accounts. Whether you're capturing a beautiful sunset, a historical
+                                        landmark, or a unique cultural event, sharing your journey has never been
+                                        easier. Join a global community of travelers and be a part of the virtual
+                                        tourism revolution.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/social-media-section.png"
+                                            alt="Social Media Integration">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why Social Media Integration?</h1>
+                                    <p>Social media integration enhances the virtual tourism experience by allowing
+                                        users to share their adventures in real-time. By sharing their experiences,
+                                        users not only create lasting memories but also inspire others to explore new
+                                        destinations. It provides a sense of community, where travelers can exchange
+                                        tips, photos, and stories, and even participate in virtual events or challenges.
+                                        Social media integration helps promote cultural exchange, builds connections,
+                                        and makes the experience more interactive and enjoyable for everyone.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="vr-concerts" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>VR Concerts</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Step into the future of live entertainment with OKOMO360's VR Concerts.
+                                        Experience the thrill of being at your favorite concert without ever leaving
+                                        your home. With our cutting-edge virtual reality technology, you can attend live
+                                        performances from top artists, interact with the crowd, and feel the energy of
+                                        the event as if you were actually there. Whether it's a rock concert, a
+                                        classical music performance, or an exclusive DJ set, VR Concerts provide an
+                                        immersive experience that brings the magic of live shows straight to your living
+                                        room.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/concert-section.png" alt="VR Concert">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why VR Concerts?</h1>
+                                    <p>VR Concerts offer numerous benefits for music lovers and performers alike. For
+                                        fans, they provide access to live events that might otherwise be out of reach
+                                        due to geographic or financial limitations. For performers, VR concerts open up
+                                        a global audience, enabling them to reach fans from all over the world. The
+                                        immersive nature of VR makes the experience feel more personal and engaging,
+                                        allowing attendees to interact with the environment and even with other
+                                        concert-goers in real-time. It’s the future of entertainment that redefines how
+                                        we experience live music.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="corporate" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>Corporate Virtual Experiences</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Transform the way your company engages with clients, partners, and employees
+                                        through OKOMO360's corporate virtual experiences. Host immersive virtual
+                                        conferences, product launches, training sessions, and team-building events that
+                                        bring your business to the forefront of innovation. Our platform offers dynamic,
+                                        interactive environments where you can connect, collaborate, and engage in
+                                        meaningful ways, no matter the distance. Whether it's showcasing your company's
+                                        products or offering virtual tours of your facilities, we help you bring your
+                                        brand to life in a captivating way.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/corporate-section.png"
+                                            alt="Corporate Virtual Experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why Corporate Virtual Experiences?</h1>
+                                    <p>Corporate virtual experiences are a powerful tool to increase engagement, expand
+                                        your reach, and create memorable interactions with clients and employees. These
+                                        experiences are cost-effective, allowing you to host large events without the
+                                        need for travel or physical space. The ability to personalize virtual
+                                        environments, showcase your products, and enable interactive networking helps
+                                        you deliver an immersive and impactful experience. Virtual corporate events also
+                                        promote sustainability by reducing the carbon footprint of travel, making them a
+                                        modern, eco-friendly solution for the business world.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="education" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>Educational Virtual Tours</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Enhance learning experiences with OKOMO360’s educational virtual tours. Whether
+                                        you are a student, educator, or institution, our immersive platform brings
+                                        history, science, art, and culture to life through interactive, 360-degree
+                                        virtual tours. Explore museums, historical landmarks, and scientific sites, or
+                                        take part in immersive educational simulations. With our technology, you can
+                                        create rich, engaging learning experiences that make education more accessible
+                                        and fun, bridging the gap between theory and real-world exploration.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/education-section.png" alt="Educational Virtual Tours">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why Educational Virtual Tours?</h1>
+                                    <p>Educational virtual tours provide an innovative way to enhance learning by making
+                                        it more engaging and interactive. Students can explore various topics in depth,
+                                        visit locations that would otherwise be inaccessible, and participate in
+                                        hands-on learning experiences that stimulate creativity and curiosity. Virtual
+                                        tours break down geographical and financial barriers, offering equal educational
+                                        opportunities for everyone, regardless of location. They foster global
+                                        understanding, promote cultural exchange, and help make complex subjects easier
+                                        to understand by presenting them in a visual, immersive format.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="extreme-sports" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>Extreme Sports in VR</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Experience the thrill of extreme sports like never before with OKOMO360's
+                                        immersive VR sports experiences. From skydiving and bungee jumping to
+                                        snowboarding and rock climbing, our platform allows you to engage in
+                                        heart-racing adventures without leaving the ground. With cutting-edge virtual
+                                        reality technology, you can feel the adrenaline rush as if you were actually
+                                        participating in these extreme sports, all from the safety and comfort of your
+                                        home. Whether you're seeking the rush of speed or the challenge of mastering new
+                                        skills, our VR extreme sports experiences provide a safe, thrilling, and
+                                        unforgettable journey.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/extreme-sport-section.png" alt="VR Extreme Sports">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why VR Extreme Sports?</h1>
+                                    <p>VR extreme sports provide a unique, immersive experience that allows you to
+                                        explore a wide variety of adrenaline-pumping activities without the physical
+                                        risks or need for special equipment. These experiences offer individuals an
+                                        opportunity to try out extreme sports that may be inaccessible due to
+                                        geographical, financial, or physical constraints. Whether you're an adrenaline
+                                        junkie looking to experience a new sport or someone who enjoys exploring the
+                                        boundaries of virtual reality, VR extreme sports offer a safe, exciting, and
+                                        immersive way to push your limits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="real-estate" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>Virtual Real Estate Tours</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Explore properties from anywhere in the world with OKOMO360’s virtual real estate
+                                        tours. Our platform offers fully immersive 360-degree views of properties,
+                                        allowing you to explore every room, corner, and detail without having to visit
+                                        in person. Whether you’re looking to buy a home, rent an apartment, or invest in
+                                        commercial real estate, our virtual tours give you the freedom to walk through
+                                        properties and make informed decisions. With high-definition visuals and
+                                        interactive features, you can experience a property as if you were physically
+                                        there, from the comfort of your home.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/real-estate-section.png"
+                                            alt="Real Estate Virtual Tour">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why Virtual Real Estate Tours?</h1>
+                                    <p>Virtual real estate tours provide a convenient and efficient way to explore
+                                        properties without the need for physical visits. They save time and money by
+                                        enabling prospective buyers and renters to narrow down their options from
+                                        anywhere in the world. Virtual tours also enhance the decision-making process,
+                                        allowing users to get a more accurate sense of space and layout. Whether you're
+                                        selling or buying, virtual tours can be an essential tool for real estate
+                                        professionals to market properties in a more engaging and accessible way, all
+                                        while offering a more sustainable and eco-friendly alternative to traditional
+                                        property visits.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="vr-games" class="tabcontent">
+                        <div class="section-heading">
+                            <h3>Immersive VR Gaming</h3>
+                            <button class="consult">Consult Now</button>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <p>Step into new worlds and experience gaming like never before with OKOMO360’s
+                                        immersive VR gaming platform. From action-packed adventures to mind-bending
+                                        puzzles, our VR games offer an unparalleled level of interactivity and realism.
+                                        Engage with lifelike characters, explore intricate environments, and complete
+                                        challenges in ways that traditional gaming simply can’t offer. With our
+                                        cutting-edge VR technology, your gaming experience will feel incredibly real,
+                                        providing you with endless hours of entertainment and excitement.</p>
+                                </div>
+                                <div class="content-box">
+                                    <div class="content-profile">
+                                        <img src="../img/service/vr-games-section.png" alt="VR Gaming Experience">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="section">
+                            <div class="content">
+                                <div class="content-box">
+                                    <h1>Why VR Games?</h1>
+                                    <p>VR games provide an immersive, interactive experience that transports you
+                                        directly into the action. With virtual reality, players can interact with the
+                                        game environment, make decisions, and experience challenges in a fully engaging
+                                        way. These games open up a new world of possibilities by incorporating physical
+                                        movements and spatial awareness into gameplay, enhancing immersion. VR gaming
+                                        also fosters social experiences with multiplayer options, allowing you to
+                                        connect and compete with friends or other players globally. Whether you're a
+                                        casual gamer or a seasoned enthusiast, VR gaming takes your gaming to the next
+                                        level.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </main>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+
+
+    <script src="../js/global.js"></script>
+    <script src="../js/reloadTransition.js"></script>
+    <script>
+
+        function openService(evt, serviceName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(serviceName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        document.getElementById("defaultOpen").click();
+
+        let consult = document.querySelectorAll(".consult")
+        consult.forEach(btn => {
+            btn.addEventListener('click', () => {
+                window.location.href = 'contact.html';
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
