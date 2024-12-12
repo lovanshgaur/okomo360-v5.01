@@ -294,6 +294,7 @@ footer .container .footer-details {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  display: none;
 }
 
 .footer-details .column {
