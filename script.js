@@ -66,8 +66,14 @@ let imgArray = [
   
   // Update on window resize
   window.addEventListener("resize", updateResponsiveBackground);
-  
-  
+  let googleApp = document.getElementById("googleapp")
+  googleApp.addEventListener("click", ()=>{
+  window.open("https://play.google.com/store/apps/details?id=com.app.okomo360&pcampaignid=web_share", "_blank"); 
+  })
+  let appleApp = document.getElementById("appleapp")
+  appleApp.addEventListener("click", ()=>{
+  window.open("https://apps.apple.com/in/app/okomo360/id6470433476", "_blank"); 
+  })
 
 
 let vrLink = document.getElementById('containerVr')
