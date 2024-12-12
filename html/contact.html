@@ -13,7 +13,30 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
 
-
+<style>
+    .custom-alert {
+            display: none;
+            position: fixed;
+            width: 40vw;
+            height: max-content;
+            min-height: 5rem;
+            top: 2%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--theme);
+            border-radius: 1rem;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        .custom-alert.show {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1rem;
+            color: #101010;
+            text-align: center;
+        }
+</style>
 </head>
 
 <body>
@@ -93,174 +116,106 @@
                                 <i class="fa-solid fa-phone"></i>
                                 <p>+91 81999 69966</p>
                             </div>
-                            
-                        <div class="info-contact">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Gurgaon, India</p>
+
+                            <div class="info-contact">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <p>Gurgaon, India</p>
+                            </div>
+
+                            <div class="info-contact" id="working-hour">
+                                <i class="fas fa-business-time"></i>
+                                <p>Working Hours: Monday – Friday <br> 9 AM to 6 PM (IST)</p>
+                            </div>
                         </div>
-                
-                    <div class="info-contact" id="working-hour">
-                        <i class="fas fa-business-time"></i>
-                        <p>Working Hours: Monday – Friday <br> 9 AM to 6 PM (IST)</p>
+                        <div class="info-socials">
+                            <div class="info-social">
+                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            </div>
+                            <div class="info-social">
+                                <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                            </div>
+                            <div class="info-social">
+                                <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                            </div>
+                            <div class="info-social">
+                                <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <div class="info-social">
+                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-box">
+
+                        <form action="/submit-form" method="post" name="submit-to-google-sheet" id="contactForm">
+                            <div class="form-step">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="first-name">First Name</label>
+                                        <input type="text" id="name" name="Name" placeholder="John Doe">
+                                    </div>
+                                </div>
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="email">Mail</label>
+                                        <input type="email" id="email" name="Email" placeholder="john@doe.com">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="phone">Phone</label>
+                                        <input type="tel" id="phone" name="Phone" required>
+                                    </div>
+                                </div>
+                                <div class="form-row category">
+                                    <p>What type of service do you need?</p>
+                                    <textarea name="Service" id="service-type" placeholder="Service Category"
+                                        maxlength="100"></textarea>
+                                </div>
+                                <button type="submit" class="submit-btn">Submit</button>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
-                    <div class="info-socials">
-                        <div class="info-social">
-                            <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        </div>
-                        <div class="info-social">
-                            <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
-                        </div>
-                        <div class="info-social">
-                            <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
-                        </div>
-                        <div class="info-social">
-                            <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        </div>
-                        <div class="info-social">
-                            <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                        </div>
+
+            </section>
+        </main>
+        
+<div id="customAlert" class="custom-alert">
+    <span id="customAlertMessage"></span>
+  </div>
+        <!-- -----------Main Section----------- -->
+
+        <!-------------Footer Section------------->
+        <footer>
+            <div class="container">
+                <div class="left">
+                    <div id="logo"><img src="../img/logo.png" alt=""></div>
+
+                    <div id="left">© 2024 - All Rights Reserved.</div>
+                    <div id="contact">
+                        <p>help@okomo360.com </p>
+                        <p> +91 81999 69966 </p>
                     </div>
                 </div>
-                <div class="form-box">
-
-                    <form id="multi-step-form">
-                        <!-- Step 1: Personal Information -->
-                        <div class="form-step" id="step-1">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="first-name">First Name</label>
-                                    <input type="text" id="first-name" placeholder="John">
-                                </div>
-                                <div class="form-group">
-                                    <label for="last-name">Last Name</label>
-                                    <input type="text" id="last-name" placeholder="Doe">
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="email">Mail</label>
-                                    <input type="email" id="email" placeholder="john@doe.com">
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="tel" id="phone" name="phone" required>
-                                </div>
-                            </div>
-                            <div class="form-row category">
-                                <p>What type of service do you need?</p>
-                                <div class="radio-group">
-                                    <label><input type="radio" name="service" value="vr-tour"> VR Tour</label>
-                                    <label><input type="radio" name="service" value="vr-wedding"> VR Wedding</label>
-                                    <label><input type="radio" name="service" value="vr-education"> VR
-                                        Education</label>
-                                    <label><input type="radio" name="service" value="3d-projects"> 3D
-                                        Projects</label>
-                                </div>
-                            </div>
-                            <button type="button" class="submit-btn" onclick="nextStep()">Next</button>
-                        </div>
-
-                        <!-- Step 2: VR Tour Details -->
-                        <div class="form-step" id="step-2-vr-tour" style="display: none;">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="tour-date">Preferred Tour Date</label>
-                                    <input type="date" id="tour-date">
-                                </div>
-                                <div class="form-group">
-                                    <label for="tour-location">Tour Location</label>
-                                    <input type="text" id="tour-location" placeholder="Location">
-                                </div>
-                            </div>
-                            <button type="button" class="submit-btn" onclick="previousStep()">Back</button>
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </div>
-
-                        <!-- Step 2: VR Wedding Details -->
-                        <div class="form-step" id="step-2-vr-wedding" style="display: none;">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="wedding-date">Wedding Date</label>
-                                    <input type="date" id="wedding-date">
-                                </div>
-                                <div class="form-group">
-                                    <label for="wedding-venue">Wedding Venue</label>
-                                    <input type="text" id="wedding-venue" placeholder="Venue">
-                                </div>
-                            </div>
-                            <button type="button" class="submit-btn" onclick="previousStep()">Back</button>
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </div>
-
-                        <!-- Step 2: VR Education Details -->
-                        <div class="form-step" id="step-2-vr-education" style="display: none;">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="education-topic">Education Topic</label>
-                                    <input type="text" id="education-topic" placeholder="Topic">
-                                </div>
-                                <div class="form-group">
-                                    <label for="education-level">Education Level</label>
-                                    <input type="text" id="education-level" placeholder="Level">
-                                </div>
-                            </div>
-                            <button type="button" class="submit-btn" onclick="previousStep()">Back</button>
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </div>
-
-                        <!-- Step 2: 3D Projects Details -->
-                        <div class="form-step" id="step-2-3d-projects" style="display: none;">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="project-description">Project Description</label>
-                                    <textarea id="project-description" placeholder="Describe your project"></textarea>
-                                </div>
-                            </div>
-                            <button type="button" class="submit-btn" onclick="previousStep()">Back</button>
-                            <button type="submit" class="submit-btn">Send Message</button>
-                        </div>
-
-                    </form>
-
-                </div>
-    </div>
-
-    </section>
-    </main>
-    <!-- -----------Main Section----------- -->
-
-    <!-------------Footer Section------------->
-    <footer>
-        <div class="container">
-            <div class="left">
-                <div id="logo"><img src="../img/logo.png" alt=""></div>
-
-                <div id="left">© 2024 - All Rights Reserved.</div>
-                <div id="contact">
-                    <p>help@okomo360.com </p>
-                    <p> +91 81999 69966 </p>
+                <div class="footer-details">
+                    <div class="column" id="column-1">
+                        <div id="details-heading"><a href="">Company</a></div>
+                        <div id="details-link"><a href="">Terms & Conditions</a></div>
+                        <div id="details-link"><a href="">Privacy Policy</a></div>
+                        <div id="details-link"><a href="">Contact Us</a></div>
+                    </div>
+                    <div class="column" id="column-2">
+                        <div id="details-heading"><a href="">Social</a></div>
+                        <div id="details-link"><a href="">Facebook</a></div>
+                        <div id="details-link"><a href="">Youtube</a></div>
+                        <div id="details-link"><a href="">Instagram</a></div>
+                        <div id="details-link"><a href="">Twitter</a></div>
+                    </div>
                 </div>
             </div>
-            <div class="footer-details">
-                <div class="column" id="column-1">
-                    <div id="details-heading"><a href="">Company</a></div>
-                    <div id="details-link"><a href="">Terms & Conditions</a></div>
-                    <div id="details-link"><a href="">Privacy Policy</a></div>
-                    <div id="details-link"><a href="">Contact Us</a></div>
-                </div>
-                <div class="column" id="column-2">
-                    <div id="details-heading"><a href="">Social</a></div>
-                    <div id="details-link"><a href="">Facebook</a></div>
-                    <div id="details-link"><a href="">Youtube</a></div>
-                    <div id="details-link"><a href="">Instagram</a></div>
-                    <div id="details-link"><a href="">Twitter</a></div>
-                </div>
-            </div>
-        </div>
-    </footer>
+        </footer>
 
-    <!-- -----------Footer Section----------- -->
+        <!-- -----------Footer Section----------- -->
 
     </div>
 
@@ -282,21 +237,52 @@
             preferredCountries: ["in", "us", "gb", "au", "ca", "nz", "sg"],
             utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
         });
-        function nextStep() {
-            const selectedService = document.querySelector('input[name="service"]:checked').value;
-            document.getElementById('step-1').style.display = 'none';
-            document.getElementById(`step-2-${selectedService}`).style.display = 'block';
-        }
-
-        function previousStep() {
-            document.querySelectorAll('.form-step').forEach(step => step.style.display = 'none');
-            document.getElementById('step-1').style.display = 'block';
-        }
 
     </script>
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
 
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwLFLEW6YgzmXPiHP__mbkI0PwYiXsP-TWYEw8wV0adyE_iIc3aTb02r465eT2t8UHb/exec';
+        const form = document.forms['submit-to-google-sheet'];
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+            const submitButton = form.querySelector('button[type="submit"]');
+            submitButton.disabled = true;
+
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    let message = document.getElementById("service-type") ? document.getElementById("service-type").value : "No message";
+                    console.log('Success!', response);
+                    console.log(message);
+                    showAlert("Successfully Added your query about", message);
+                    formClear();
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    submitButton.disabled = false; // Re-enable button on error
+                });
+
+            form.addEventListener('reset', () => {
+                submitButton.disabled = false;
+            });
+        });
+
+        function formClear() {
+            document.getElementById("contactForm").reset();
+        }
+
+        function showAlert(response, message) {
+            var customAlert = document.getElementById('customAlert');
+            var customAlertMessage = document.getElementById('customAlertMessage');
+
+            customAlertMessage.innerText = response + "--" + message;
+            customAlert.classList.add('show');
+
+            setTimeout(function () {
+                customAlert.classList.remove('show');
+            }, 4000);
+        }
+    </script>
 
     <script src="../js/global.js"></script>
     <script src="../js/reloadTransition.js"></script>

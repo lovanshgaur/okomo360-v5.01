@@ -14,7 +14,7 @@
 
 .form-container {
     width: 80%;
-    height: 60vh;
+    height: 65vh;
     display: flex;
     gap: 2rem;
     overflow: hidden;
@@ -150,7 +150,7 @@
 
 .form-box {
     width: 60%;
-    height: 100%;
+    height: max-content;
     padding: 1rem;
 }
 
@@ -196,6 +196,7 @@ textarea {
 input::placeholder,
 textarea::placeholder {
     color: var(--color);
+    opacity: 0.6;
 }
 
 input:hover,
