@@ -14,7 +14,7 @@
 
 .form-container {
     width: 80%;
-    height: 65vh;
+    height: 70vh;
     display: flex;
     gap: 2rem;
     overflow: hidden;
@@ -255,7 +255,7 @@ textarea:focus {
 .submit-btn {
     background: transparent;
     color: white;
-    padding: 1rem 2.5rem;
+    padding: 0.5rem 2.5rem;
     border: 2px solid var(--accent);
     font-size: 1rem;
     font-weight: 500;
