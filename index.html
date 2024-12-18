@@ -8,14 +8,12 @@
     <link rel="stylesheet" href="style.css" class="css">
     <link rel="stylesheet" href="css/global.css" class="css">
     <link rel="stylesheet" href="css/responsive.css" class="css">
-
-
 </head>
 
 <body>
 
     <!-- Reload Transition -->
-    <div class="transition">
+    <div class="transition" role="presentation" aria-hidden="true">
         <div class="transition-row row-1">
             <div class="block"></div>
             <div class="block"></div>
@@ -36,19 +34,19 @@
     <div id="container">
 
         <!-- -----------Nav Section----------- -->
-        <nav>
+        <nav aria-label="Main Navigation">
             <div id="logo">
-                <a href="index.html"><img src="img/logo.png" alt=""></a>
+                <a href="index.html" aria-label="Okomo 360 Home"><img src="img/logo.png" alt="Okomo 360 Logo"></a>
             </div>
             <div id="navbar">
-                <div class="nav-icon" id="nav-icon">
+                <div class="nav-icon" id="nav-icon" aria-label="Toggle Navigation">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar" role="navigation" aria-label="Sidebar Navigation">
                     <div class="link-container">
-                        <a href="index.html" class="active-link">Home</a>
+                        <a href="index.html" class="active-link" aria-current="page">Home</a>
                         <a href="html/service.html">Services</a>
                         <a href="html/about.html">About</a>
                         <a href="html/contact.html">Connect</a>
@@ -60,14 +58,16 @@
 
         <!-- -----------Header Section----------- -->
         <header>
-            <div class="banner"><video src="img/hdr-hero.mp4" autoplay muted loop></video></div>
+            <div class="banner" role="img" aria-label="Promotional Video Banner">
+                <video src="img/hdr-hero.mp4" autoplay muted loop></video>
+            </div>
             <div class="banner-text">
                 <h1>Experience the World in 360° <br> Your Reality, Reimagine</h1>
                 <p>From weddings to property tours, training sessions to temple visits – Okomo360 brings
                     immersive VR experiences to your fingertips.</p>
                 <div class="btn-container">
-                    <img src="img/google-play.png" id="googleapp" alt="">
-                    <img src="img/app-store.png" id="appleapp" alt=""> 
+                    <img src="img/google-play.png" id="googleapp" alt="Download on Google Play">
+                    <img src="img/app-store.png" id="appleapp" alt="Download on the App Store"> 
                 </div>
             </div>
         </header>
@@ -77,22 +77,20 @@
         <main>
 
             <!-- Play Section -->
-            <section id="play">
+            <section id="play" aria-labelledby="play-heading">
                 <div class="play-overlay"></div>
                 <div class="play-overlay">
                     <video src="img/play.mp4" muted loop autoplay></video>
                 </div>
                 <div class="play-text">
                     <div class="play-text-box">
-                        <h1>Experience Our End-to-End Services</h1>
+                        <h1 id="play-heading">Experience Our End-to-End Services</h1>
                         <p>We don’t just create VR videos – we craft experiences. Whether you need a 360° tour, VR
                             training, or an unforgettable virtual event, Okomo360 has you covered.</p>
                         <p>From shooting the content to hosting it on our app, we deliver everything you need to wow
-                            your
-                            audience.</p>
+                            your audience.</p>
                         <div class="play-btn">
-                            <button id="play-btn"><a href="html/service.html">Explore our Services
-                                </a></button>
+                            <button id="play-btn"><a href="html/service.html">Explore our Services</a></button>
                             <div class="play-btn-overlay"></div>
                         </div>
                     </div>
@@ -100,21 +98,20 @@
             </section>
 
             <!-- ServicesDefine Section -->
-            <section id="service-list">
+            <section id="service-list" aria-labelledby="services-heading">
                 <div class="section-heading">
-                    <h1>Our Services</h1>
+                    <h1 id="services-heading">Our Services</h1>
                 </div>
                 <div class="list-box">
                     <div class="list-content">
 
-                        <div class="service-name active" id="wedding" data-value="1">
+                        <div class="service-name active" id="wedding" data-value="1" role="article" aria-labelledby="wedding-heading">
                             <div class="service-name-box">
                                 <div class="service-text-box">
                                     <div class="service-number">01.</div>
                                     <div class="service-text">
-                                        <a href="html/vr-weddings.html">
+                                        <a href="html/vr-weddings.html" id="wedding-heading">
                                             <h1>VR Weddings</h1>
-                                        
                                         </a>
                                         <p>Capture your special moments in a breathtaking 360° experience. Our VR Weddings service allows you to relive your big day from every angle, ensuring that no detail is missed. Share the joy with friends and family, no matter where they are, through immersive virtual reality.</p>
                                     </div>
@@ -123,12 +120,12 @@
                             </div>
                         </div>
 
-                        <div class="service-name" id="buy-vr" data-value="2">
+                        <div class="service-name" id="buy-vr" data-value="2" role="article" aria-labelledby="buy-vr-heading">
                             <div class="service-name-box">
                                 <div class="service-text-box">
                                     <div class="service-number">02.</div>
                                     <div class="service-text">
-                                        <a href="html/buy-vr.html">
+                                        <a href="html/buy-vr.html" id="buy-vr-heading">
                                             <h1>Buy VR Headset</h1>
                                         </a>
                                         <p>At Okomo360, we offer cutting-edge VR headsets designed to elevate your virtual reality experience. Our headsets provide stunning visuals and immersive sound, making them perfect for gaming, education, and professional use.</p>
@@ -138,27 +135,30 @@
                             </div>
                         </div>
 
-                        <div class="service-name" id="education" data-value="3">
+                        <div class="service-name" id="education" data-value="3" role="article" aria-labelledby="education-heading">
                             <div class="service-name-box">
                                 <div class="service-text-box">
                                     <div class="service-number">03.</div>
                                     <div class="service-text">
-                                        <h1>VR School</h1>
-                                        <p>We believe in revolutionizing education through immersive virtual reality experiences. Our VR School program offers interactive lessons that engage students in a way traditional methods cannot. </p>
+                                        <a href="html/vr-school.html" id="education-heading">
+                                            <h1>VR School</h1>
+                                        </a>
+                                        <p>We believe in revolutionizing education through immersive virtual reality experiences. Our VR School program offers interactive lessons that engage students in a way traditional methods cannot.</p>
                                     </div>
                                     <div class="service-link"><a href="html/vr-school.html"> &#8594; </a></div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="service-name" id="err" data-value="4">
+                        <div class="service-name" id="err" data-value="4" role="article" aria-labelledby="industrial-tour-heading">
                             <div class="service-name-box">
                                 <div class="service-text-box">
                                     <div class="service-number">04.</div>
                                     <div class="service-text">
-                                        <h1>Industrial Virtual Tour</h1>
-                                        <p>Experience the future of industry with our Industrial Virtual Tour. We provide an immersive journey through your facilities, showcasing your processes and innovations in a captivating way. 
-                                        </p>
+                                        <a href="html/err.html" id="industrial-tour-heading">
+                                            <h1>Industrial Virtual Tour</h1>
+                                        </a>
+                                        <p>Experience the future of industry with our Industrial Virtual Tour. We provide an immersive journey through your facilities, showcasing your processes and innovations in a captivating way.</p>
                                     </div>
                                     <div class="service-link"><a href="html/err.html"> &#8594; </a></div>
                                 </div>
@@ -166,17 +166,17 @@
                         </div>
                     </div>
 
-                    <div class="service-profile" id="service-profile"></div>
+                    <div class="service-profile" id="service-profile" aria-hidden="true"></div>
                 </div>
             </section>
 
             <!-- Buy VR Section  -->
-            <section id="vr">
+            <section id="vr" aria-labelledby="vr-heading">
                 <div class="vr-overlay"></div>
                 <div class="vr-container">
                     <div class="vr-content">
-                        <h1>Why Choose Us? </h1>
-                        <h3>Why Settle for Ordinary When You Can Experience Extraordinary? </h3>
+                        <h1 id="vr-heading">Why Choose Us?</h1>
+                        <h3>Why Settle for Ordinary When You Can Experience Extraordinary?</h3>
                         <ul>
                             <li>Easy Hosting & Sharing with our OKOMO360 app</li>
                             <li>Affordable Okomo VR Headsets</li>
@@ -186,7 +186,7 @@
                         <h3 id="h32">You name it, we create it.</h3>
                         <div class="btn-container"><button><a href="html/contact.html">Book a Free Consultation</a></button></div>
                     </div>
-                    <div class="vr-profile"><img src="img/service-img.png" alt=""></div>
+                    <div class="vr-profile"><img src="img/service-img.png" alt="Service Image"></div>
                 </div>
             </section>
 
@@ -197,10 +197,10 @@
         <footer>
             <div class="container">
                 <div class="left">
-                    <div id="logo"><img src="img/logo.png" alt=""></div>
+                    <div id="logo"><img src="img/logo.png" alt="Okomo 360 Logo"></div>
 
                     <div id="left">© 2024 - All Rights Reserved.</div>
-                    <div id="contact">
+                    <div id="contact" aria-label="Contact Information">
                         <p>help@okomo360.com </p>
                         <p> +91 81999 69966 </p>
                     </div>
@@ -225,9 +225,7 @@
 
         <!-- -----------Footer Section----------- -->
 
-
     </div>
-
 
     <!-- GSAP Libraries  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"

@@ -42,15 +42,15 @@
 <body>
 
     <!-- Reload Transition -->
-    <div class="transition">
-        <div class="transition-row row-1">
+    <div class="transition" aria-label="Page transition">
+        <div class="transition-row row-1" aria-hidden="true">
             <div class="block"></div>
             <div class="block"></div>
             <div class="block"></div>
             <div class="block"></div>
             <div class="block"></div>
         </div>
-        <div class="transition-row row-2">
+        <div class="transition-row row-2" aria-hidden="true">
             <div class="block"></div>
             <div class="block"></div>
             <div class="block"></div>
@@ -63,22 +63,22 @@
     <div id="container">
 
         <!-- -----------Nav Section----------- -->
-        <nav>
+        <nav aria-label="Main Navigation">
             <div id="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <a href="../index.html" aria-label="Okomo 360 Home"><img src="../img/logo.png" alt="Okomo 360 Logo"></a>
             </div>
             <div id="navbar">
-                <div class="nav-icon" id="nav-icon">
+                <div class="nav-icon" id="nav-icon" aria-label="Toggle Navigation">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar" role="navigation" aria-label="Sidebar Navigation">
                     <div class="link-container">
                         <a href="../index.html">Home</a>
                         <a href="service.html">Services</a>
                         <a href="about.html">About</a>
-                        <a href="contact.html" class="active-link">Connect</a>
+                        <a href="contact.html" class="active-link" aria-current="page">Connect</a>
                     </div>
                 </div>
             </div>
@@ -87,90 +87,83 @@
 
         <!-- -----------Header Section----------- -->
         <header>
-            <div class="header-overlay"></div>
+            <div class="header-overlay" aria-hidden="true"></div>
         </header>
         <!-- -----------Header Section----------- -->
 
         <!-- -----------Main Section----------- -->
         <main>
-            <section id="form">
+            <section id="form" aria-labelledby="connect-header">
                 <div id="connect-header">
                     <h1>Connect with us </h1>
                 </div>
                 <div class="form-container">
                     <div class="info-box">
-                        <div class="bubble"></div>
-                        <div class="bubble"></div>
+                        <div class="bubble" aria-hidden="true"></div>
+                        <div class="bubble" aria-hidden="true"></div>
                         <div class="info-heading">
                             <h2>Let's Create Immersive Experiences Together! </h2>
                             <p>Have a vision, a project idea, or just curious about how VR can transform your business?
                                 We’d love to hear from you!
                             </p>
                         </div>
-                        <div class="info-contacts">
-                            <div class="info-contact">
-                                <i class="fa-solid fa-envelope"></i>
+                        <div class="info-contacts" aria-label="Contact Information">
+                            <div class="info-contact" aria-label="Email Contact">
+                                <i class="fa-solid fa-envelope" aria-hidden="true"></i>
                                 <p>info@okomo360.com</p>
                             </div>
-                            <div class="info-contact">
-                                <i class="fa-solid fa-phone"></i>
+                            <div class="info-contact" aria-label="Phone Contact">
+                                <i class="fa-solid fa-phone" aria-hidden="true"></i>
                                 <p>+91 81999 69966</p>
                             </div>
 
-                            <div class="info-contact">
-                                <i class="fa-solid fa-location-dot"></i>
+                            <div class="info-contact" aria-label="Location">
+                                <i class="fa-solid fa-location-dot" aria-hidden="true"></i>
                                 <p>Gurgaon, India</p>
                             </div>
 
-                            <div class="info-contact" id="working-hour">
-                                <i class="fas fa-business-time"></i>
+                            <div class="info-contact" id="working-hour" aria-label="Working Hours">
+                                <i class="fas fa-business-time" aria-hidden="true"></i>
                                 <p>Working Hours: Monday – Friday <br> 9 AM to 6 PM (IST)</p>
                             </div>
                         </div>
-                        <div class="info-socials">
-                            <!-- <div class="info-social">
-                                <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                            </div> -->
+                        <div class="info-socials" aria-label="Social Media Links">
                             <div class="info-social">
-                                <a href="https://www.instagram.com/okomo360/" target="_blank"><i class="fab fa-instagram"></i></a>
+                                <a href="https://www.instagram.com/okomo360/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
                             </div>
                             <div class="info-social">
-                                <a href="https://youtube.com/@okomo360?si=voigsRfDDJIvI3LB" target="_blank"><i class="fab fa-youtube"></i></a>
+                                <a href="https://youtube.com/@okomo360?si=voigsRfDDJIvI3LB" target="_blank" aria-label="YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
                             </div>
                             <div class="info-social">
-                                <a href="https://www.linkedin.com/company/okomo360/posts/?feedView=all" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                                <a href="https://www.linkedin.com/company/okomo360/posts/?feedView=all" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
                             </div>
-                            <!-- <div class="info-social">
-                                <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
-                            </div> -->
                         </div>
                     </div>
                     <div class="form-box">
 
-                        <form action="/submit-form" method="post" name="submit-to-google-sheet" id="contactForm">
+                        <form action="/submit-form" method="post" name="submit-to-google-sheet" id="contactForm" aria-label="Contact Form">
                             <div class="form-step">
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="first-name">First Name</label>
-                                        <input type="text" id="name" name="Name" placeholder="John Doe">
+                                        <input type="text" id="name" name="Name" placeholder="John Doe" aria-label="First Name">
                                     </div>
                                 </div>
                                 <div class="form-row">
                                     <div class="form-group">
                                         <label for="email">Mail</label>
-                                        <input type="email" id="email" name="Email" placeholder="john@doe.com">
+                                        <input type="email" id="email" name="Email" placeholder="john@doe.com" aria-label="Email Address">
                                     </div>
                                     <div class="form-group">
                                         <label for="phone">Phone</label>
-                                        <input type="tel" id="phone" name="Phone" required>
+                                        <input type="tel" id="phone" name="Phone" required aria-label="Phone Number">
                                     </div>
                                 </div>
                                 <div class="form-row category">
                                     <p>What type of service do you need?</p>
-                                    <textarea name="Service" id="service-type" placeholder="Service Category"
-                                        maxlength="100"></textarea>
+                                    <textarea name="Service" id="service-type" placeholder="Service Category" maxlength="100" aria-label="Service Type"></textarea>
                                 </div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="submit" class="submit-btn" aria-label="Submit Form">Submit</button>
                             </div>
                         </form>
 
@@ -180,7 +173,7 @@
             </section>
         </main>
         
-<div id="customAlert" class="custom-alert">
+<div id="customAlert" class="custom-alert" aria-live="polite">
     <span id="customAlertMessage"></span>
   </div>
         <!-- -----------Main Section----------- -->
@@ -189,10 +182,10 @@
         <footer>
             <div class="container">
                 <div class="left">
-                    <div id="logo"><img src="../img/logo.png" alt=""></div>
+                    <div id="logo"><img src="../img/logo.png" alt="Okomo 360 Logo"></div>
 
                     <div id="left">© 2024 - All Rights Reserved.</div>
-                    <div id="contact">
+                    <div id="contact" aria-label="Contact Information">
                         <p>help@okomo360.com </p>
                         <p> +91 81999 69966 </p>
                     </div>

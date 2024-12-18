@@ -1,5 +1,4 @@
 header {
-  margin-top: 10vh;
   height: max-content;
 }
 header img {
@@ -174,6 +173,7 @@ header img {
   display: flex;
   align-items: center;
   justify-content: center;
+  display: none;
 }
 
 .package-text {
@@ -183,6 +183,9 @@ header img {
   padding-right: 1rem;
 }
 
+.package-text p {
+  display: none;
+}
 .package-text h1 {
   text-transform: uppercase;
 }
@@ -328,6 +331,9 @@ td:hover {
 }
 
 @media (max-width: 768px) {
+  header {
+    margin-top: 10vh;
+  }
   .packages {
     height: max-content;
   }
@@ -394,11 +400,8 @@ td:hover {
 
   .package-text p {
     font-size: 2rem;
-    display: none;
   }
-  .add-package {
-    display: none;
-  }
+  
 
   .package-text h3 {
     font-size: 2rem;

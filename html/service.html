@@ -14,39 +14,39 @@
 <body>
 
     <!-- Reload Transition -->
-    <div class="transition">
+    <div class="transition" aria-label="Page transition effect">
         <div class="transition-row row-1">
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
         </div>
         <div class="transition-row row-2">
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
-            <div class="block"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
+            <div class="block" aria-hidden="true"></div>
         </div>
     </div>
     <div id="container">
 
         <!-------------Nav Section------------->
-        <nav>
+        <nav aria-label="Main navigation">
             <div id="logo">
-                <a href="../index.html"><img src="../img/logo.png" alt=""></a>
+                <a href="../index.html" aria-label="Go to homepage"><img src="../img/logo.png" alt="Okomo 360 Logo"></a>
             </div>
             <div id="navbar">
-                <div class="nav-icon" id="nav-icon">
+                <div class="nav-icon" id="nav-icon" aria-label="Toggle navigation menu">
                     <div class="bar"></div>
                     <div class="bar"></div>
                     <div class="bar"></div>
                 </div>
-                <div id="sidebar" class="sidebar">
+                <div id="sidebar" class="sidebar" aria-label="Sidebar navigation">
                     <div class="link-container">
                         <a href="../index.html">Home</a>
-                        <a href="service.html" class="active-link">Services</a>
+                        <a href="service.html" class="active-link" aria-current="page">Services</a>
                         <a href="about.html">About</a>
                         <a href="contact.html">Connect</a>
                     </div>
@@ -55,24 +55,23 @@
         </nav>
         <!-------------Nav Section------------->
         <main>
-            <div id="services-container">
+            <div id="services-container" aria-label="Services offered">
                 <div class="service-index">
-                    <button class="tablinks" onclick="openService(event, 'tourism')" id="defaultOpen">Tourism</button>
-                    <button class="tablinks" onclick="openService(event, 'social-media')">Social Media Integration</button>
-                    <button class="tablinks" onclick="openService(event, 'real-estate')">Real Estate</button>
-                    <button class="tablinks" onclick="openService(event, 'extreme-sports')">Extreme Sports</button>
-                    <button class="tablinks" onclick="openService(event, 'vr-concerts')">VR Concerts</button>
-                    <button class="tablinks" onclick="openService(event, 'corporate')">Corporate</button>
-                    <button class="tablinks" onclick="openService(event, 'education')">Education</button>
-                    <button class="tablinks" onclick="openService(event, 'vr-games')">VR Games</button>
-
+                    <button class="tablinks" onclick="openService(event, 'tourism')" id="defaultOpen" aria-label="Tourism service tab">Tourism</button>
+                    <button class="tablinks" onclick="openService(event, 'social-media')" aria-label="Social Media Integration service tab">Social Media Integration</button>
+                    <button class="tablinks" onclick="openService(event, 'real-estate')" aria-label="Real Estate service tab">Real Estate</button>
+                    <button class="tablinks" onclick="openService(event, 'extreme-sports')" aria-label="Extreme Sports service tab">Extreme Sports</button>
+                    <button class="tablinks" onclick="openService(event, 'vr-concerts')" aria-label="VR Concerts service tab">VR Concerts</button>
+                    <button class="tablinks" onclick="openService(event, 'corporate')" aria-label="Corporate service tab">Corporate</button>
+                    <button class="tablinks" onclick="openService(event, 'education')" aria-label="Education service tab">Education</button>
+                    <button class="tablinks" onclick="openService(event, 'vr-games')" aria-label="VR Games service tab">VR Games</button>
                 </div>
                 <div class="service-viewer">
 
-                    <div id="tourism" class="tabcontent">
+                    <div id="tourism" class="tabcontent" aria-labelledby="tourism">
                         <div class="section-heading">
                             <h3>VR Tourism</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for VR Tourism">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -95,7 +94,7 @@
                                 </div>
                                 <div class="content-box">
                                     <div class="content-profile">
-                                        <img src="../img/service/tourism-section.png" alt="">
+                                        <img src="../img/service/tourism-section.png" alt="VR Tourism Experience">
                                     </div>
                                 </div>
                             </div>
@@ -120,10 +119,10 @@
                         </div>
                     </div>
 
-                    <div id="social-media" class="tabcontent">
+                    <div id="social-media" class="tabcontent" aria-labelledby="social-media">
                         <div class="section-heading">
                             <h3>Social Media Integration</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for Social Media Integration">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -160,10 +159,10 @@
                             </div>
                         </div>
                     </div>
-                    <div id="vr-concerts" class="tabcontent">
+                    <div id="vr-concerts" class="tabcontent" aria-labelledby="vr-concerts">
                         <div class="section-heading">
                             <h3>VR Concerts</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for VR Concerts">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -201,10 +200,10 @@
                         </div>
                     </div>
 
-                    <div id="corporate" class="tabcontent">
+                    <div id="corporate" class="tabcontent" aria-labelledby="corporate">
                         <div class="section-heading">
                             <h3>Corporate Virtual Experiences</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for Corporate Virtual Experiences">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -243,10 +242,10 @@
                         </div>
                     </div>
 
-                    <div id="education" class="tabcontent">
+                    <div id="education" class="tabcontent" aria-labelledby="education">
                         <div class="section-heading">
                             <h3>Educational Virtual Tours</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for Educational Virtual Tours">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -283,10 +282,10 @@
                         </div>
                     </div>
 
-                    <div id="extreme-sports" class="tabcontent">
+                    <div id="extreme-sports" class="tabcontent" aria-labelledby="extreme-sports">
                         <div class="section-heading">
                             <h3>Extreme Sports in VR</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for Extreme Sports in VR">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -325,10 +324,10 @@
                         </div>
                     </div>
 
-                    <div id="real-estate" class="tabcontent">
+                    <div id="real-estate" class="tabcontent" aria-labelledby="real-estate">
                         <div class="section-heading">
                             <h3>Virtual Real Estate Tours</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for Virtual Real Estate Tours">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
@@ -368,10 +367,10 @@
                         </div>
                     </div>
 
-                    <div id="vr-games" class="tabcontent">
+                    <div id="vr-games" class="tabcontent" aria-labelledby="vr-games">
                         <div class="section-heading">
                             <h3>Immersive VR Gaming</h3>
-                            <button class="consult">Consult Now</button>
+                            <button class="consult" aria-label="Consult for Immersive VR Gaming">Consult Now</button>
                         </div>
                         <div class="section">
                             <div class="content">
